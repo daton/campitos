@@ -9,11 +9,11 @@ import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
 
 @Route
-@PWA(name = "Project Base for Vaadin Flow with Spring", shortName = "Project Base")
+@PWA(name = "Proyecto Base de Vaadin con Spring", shortName = "Proyecto JC")
 public class MainView extends VerticalLayout {
 
     public MainView(@Autowired MessageBean bean) {
-        Button button = new Button("Click me",
+        Button button = new Button("Apachurrame",
                 e -> Notification.show(bean.getMessage()));
         add(button);
     }
