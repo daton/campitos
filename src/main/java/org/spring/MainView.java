@@ -12,6 +12,7 @@ import com.vaadin.flow.component.notification.Notification;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.textfield.EmailField;
 import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
@@ -35,7 +36,7 @@ TextField campoNombre = new TextField();
 campoNombre.setLabel("Nombre");
 campoNombre.setPlaceholder("Nombre del prof.");
 
-TextField campoEmail = new TextField();
+EmailField campoEmail = new EmailField();
 campoEmail.setLabel("Correo");
 campoEmail.setPlaceholder("e-mail");
 
