@@ -1,9 +1,13 @@
 package org.spring;
 
+import static com.vaadin.flow.component.Tag.H3;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.formlayout.FormLayout.ResponsiveStep;
+import com.vaadin.flow.component.html.H3;
+import com.vaadin.flow.component.html.Label;
+
 import com.vaadin.flow.component.notification.Notification;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -18,7 +22,8 @@ public class MainView extends VerticalLayout {
 @Autowired RepoProfesor repoProfesor;
     public MainView(@Autowired MessageBean bean) {
         
-        
+        H3 label=new H3("Guardar un nuevo profesor");
+        add(label);
        
         FormLayout nameLayout = new FormLayout();
 
