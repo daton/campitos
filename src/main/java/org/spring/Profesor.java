@@ -14,40 +14,47 @@ import org.springframework.data.annotation.Id;
 public class Profesor {
     
     @Id
-    private Integer Clave;
+    private Integer clave;
 
-    public Profesor(Integer Clave, String Nombre, String Email) {
-        this.Clave = Clave;
-        this.Nombre = Nombre;
-        this.Email = Email;
+    public Profesor(Integer clave, String nombre, String email) {
+        this.clave = clave;
+        this.nombre = nombre;
+        this.email = email;
     }
 
     public Profesor() {
     }
-    private String Nombre;
-    private String Email;
+
+   
+
+    
+    private String nombre;
+    private String email;
 
     public Integer getClave() {
-        return Clave;
+        return clave;
     }
 
-    public void setClave(Integer Clave) {
-        this.Clave = Clave;
+    public void setClave(Integer clave) {
+        this.clave = clave;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
+    
+
+    
 }
