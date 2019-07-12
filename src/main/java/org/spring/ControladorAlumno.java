@@ -41,7 +41,7 @@ public class ControladorAlumno {
         repoAlumno.save(alumno);
         //Generamos el status
         Estatus e = new Estatus();
-        e.setMensaje("Alumno guardado con exito");
+        e.setMensaje("Alumno guardado con exito  el menso");
         e.setSuccess(true);
 
         return e;
