@@ -59,11 +59,17 @@ public class ControladorAlumno {
         Alumno alumno = maper.readValue(json, Alumno.class);
 
      Alumno recuperado=   repoAlumno.findByEmailAndCuenta(alumno.getEmail(), alumno.getCuenta());
-        if(recuperado!=null)alumno.setAutenticado(true);
-        else alumno.setAutenticado(false);
+        if(recuperado!=null){
+            alumno.setAutenticado(true);
+             return recuperado;
+        }
+        else{
+            alumno.setAutenticado(false);
+            return alumno;
+        }
       
 
-        return recuperado;
+       
 
     }
     
