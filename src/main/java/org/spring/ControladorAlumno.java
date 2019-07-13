@@ -39,6 +39,7 @@ public class ControladorAlumno {
         Alumno alumno = maper.readValue(json, Alumno.class);
 
         repoAlumno.save(alumno);
+        
         //Generamos el status
         Estatus e = new Estatus();
         e.setMensaje("Alumno guardado con exito  el menso");

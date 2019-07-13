@@ -15,6 +15,9 @@ public class Profesor {
     
     @Id
     private Integer clave;
+    private String nombre;
+    private String email;
+
 
     public Profesor(Integer clave, String nombre, String email) {
         this.clave = clave;
@@ -27,9 +30,6 @@ public class Profesor {
 
    
 
-    
-    private String nombre;
-    private String email;
 
     public Integer getClave() {
         return clave;
