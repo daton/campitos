@@ -35,6 +35,15 @@ public class Alumno {
         this.email = email;
     }
 
+    public Alumno(String id, String cuenta, String nombre, List<Materia> materias, String email, boolean autenticado) {
+        this.id = id;
+        this.cuenta = cuenta;
+        this.nombre = nombre;
+        this.materias = materias;
+        this.email = email;
+        this.autenticado = autenticado;
+    }
+
     public Alumno() {
     }
 
