@@ -58,10 +58,11 @@ public class ControladorAlumno {
         ObjectMapper maper = new ObjectMapper();
         //Ahora si lo leemos
         Alumno alumno = maper.readValue(json, Alumno.class);
-
+        System.out.println("alumno "+alumno);
      Alumno recuperado=   repoAlumno.findByEmailAndCuenta(alumno.getEmail(), alumno.getCuenta());
+        System.out.println("Recuperado "+recuperado);
         if(recuperado!=null){
-            alumno.setAutenticado(true);
+            recuperado.setAutenticado(true);
              return recuperado;
         }
         else{

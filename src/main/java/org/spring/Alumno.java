@@ -15,6 +15,7 @@ import org.springframework.data.annotation.Id;
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Alumno {
+
     @Id
     String id;
 
@@ -47,7 +48,18 @@ public class Alumno {
     public Alumno() {
     }
 
-    
+    @Override
+    public String toString() {
+        return "Alumno{" +
+                "id='" + id + '\'' +
+                ", cuenta='" + cuenta + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", materias=" + materias +
+                ", email='" + email + '\'' +
+                ", autenticado=" + autenticado +
+                '}';
+    }
+
     public String getCuenta() {
         return cuenta;
     }
