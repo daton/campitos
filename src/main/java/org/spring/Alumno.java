@@ -16,6 +16,12 @@ import org.springframework.data.annotation.Id;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Alumno {
     @Id
+    String id;
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     private String cuenta;
     private String nombre;
     private List<Materia> materias;
