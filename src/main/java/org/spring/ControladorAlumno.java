@@ -108,7 +108,9 @@ public class ControladorAlumno {
      //BUscar por ID
     @GetMapping("/alumno")
     public List<Alumno> buscarTodos(){
-        
+      //  for(Alumno a:repoAlumno.findAll()){
+        //    System.out.println("aaa "+a.getId());
+      //  }
        return repoAlumno.findAll();
     }
     
